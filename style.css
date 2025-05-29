@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(to top right, #3a3a3a, #1f1f1f);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.5s ease;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 2rem;
+  border-radius: 20px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 0 20px #000000a1;
+}
+
+.top-bar {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+button {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #ffcc00;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ffaa00;
+}
+
+#weatherCard.hidden,
+#error.hidden {
+  display: none;
+}
+
+#weatherIcon {
+  width: 100px;
+  margin: 10px 0;
+}
+
+h2, h1 {
+  margin: 10px 0;
+}
+
+.details {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.error {
+  margin-top: 10px;
+  color: red;
+}
+
+/* Light Theme */
+.light-mode {
+  background: linear-gradient(to top right, #ffffff, #dcdcdc);
+  color: #111;
+}
+
+.light-mode .container {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #111;
+}
